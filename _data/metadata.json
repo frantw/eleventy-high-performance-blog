@@ -1,26 +1,26 @@
 {
-  "title": "Title of the website. Update me.",
-  "url": "https://update-me.com",
-  "domain": "update-me.com",
-  "description": "Description of the website. Update me.",
+  "title": "Faith",
+  "url": "https://fa1th.dev",
+  "domain": "fa1th.dev",
+  "description": "一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。",
   "genre": "Insert a schema.org genre",
   "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
   "sendWebVitals": false,
   "feed": {
-    "subtitle": "Subtitle. Update me.",
+    "subtitle": "一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://update-me.com"
+    "id": "https://fa1th.dev"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://update-me.com/feed/feed.json"
+    "url": "https://fa1th.dev/feed/feed.json"
   },
   "author": {
-    "name": "Author Name. Update me.",
-    "twitterHandle": "update_me"
+    "name": "Faith",
+    "twitterHandle": ""
   },
   "publisher": {
-    "name": "Publisher name. Update me."
+    "name": "Faith"
   }
 }
