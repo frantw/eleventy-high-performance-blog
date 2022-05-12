@@ -117,7 +117,7 @@ npm run build
 
 ### DX features
 
-- Uses 🚨 as favicon during local development.
+- ~~Uses 🚨 as favicon during local development.~~
 - Supports a range of default tests.
 - Runs build and tests on `git push`.
 - Sourcemap generated for JS.
