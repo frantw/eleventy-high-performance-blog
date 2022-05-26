@@ -15,7 +15,7 @@ module.exports = () => {
       eleventyExcludeFromCollections: (data) =>
         showDraft(data) ? data.eleventyExcludeFromCollections : true,
       permalink: (data) => (showDraft(data) ? data.permalink : false),
-      tags: ["posts"],
+      tags: (data) => "tags" in data ? [...data.tags, "posts"]: ["posts"],
     },
   };
 };
