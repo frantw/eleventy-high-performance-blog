@@ -113,8 +113,8 @@ header aside {
   width: 100vw;
   position: absolute;
   left: 0;
-  top: 0;
   bottom: 0;
+  height: 2px;
   transform: translate(-100vw, 0);
   will-change: transform;
   pointer-events: none;
