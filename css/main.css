@@ -1,7 +1,17 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
-  --primary-dark: #e7bf60;
+  --primary: #41bcc2;
+  --primary-dark: #35a1a6;
+  --accent-light: #fad24c;
+  --accent-dark: #92847d;
+  --shade: #aebebe;
+  --shade-light: #f5f7f7;
+  --shade-dark: #2c3e58;
+  --btn-primary: #3fbfc5;
+  --btn-info: #2c3e58;
+  --btn-success: #48b473;
+  --btn-warning: #c5a43b;
+  --btn-danger: #f44336;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -834,8 +844,6 @@ video {
 }
 body {
   font-family: var(--font-family);
-  background: #181818;
-  color: #eee;
 }
 section {
   margin-left: auto;
@@ -1090,6 +1098,29 @@ pre[class*="language-"] {
   color: green;
 }
 
+body {
+  background: var(--shade-light);
+  color: var(--shade-dark);
+}
+header nav {
+  background: var(--shade-light);
+  color: var(--shade-dark);
+}
+header nav a {
+  color: var(--shade-dark);
+}
+main {
+  border-top: 0.5px solid var(--shade-light);
+}
+footer {
+  background: var(--shade-light);
+  color: var(--shade-dark);
+}
+
+aside {
+  color: var(--shade);
+}
+
 input[type="submit"],
 button[type="submit"],
 button:not([disabled]) {
@@ -1098,7 +1129,7 @@ button:not([disabled]) {
 input[type="submit"]:hover,
 button[type="submit"]:hover,
 button:not([disabled]):hover {
-  background: var(--primary-dark);
+  background: var(--primary);
 }
 
 dd + dt {
@@ -1114,7 +1145,7 @@ mark {
 }
 
 a {
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
