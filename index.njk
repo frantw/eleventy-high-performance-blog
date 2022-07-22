@@ -10,7 +10,5 @@ date: Last Modified
   一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。
 </p>
 
-<div id="posts">
-  {% set postslist = collections.posts %}
-  {% include "postslist.njk" %}
-</div>
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
