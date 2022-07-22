@@ -105,6 +105,8 @@ header aside {
 #nav {
   z-index: 2;
   position: relative;
+  max-width: 37.5em;
+  flex-grow: 1;
 }
 
 #reading-progress {
@@ -896,6 +898,8 @@ header nav {
   background: hsla(0, 0%, 100%, 0.9);
   font-weight: 200;
   text-align: right;
+  display: flex;
+  justify-content: center;
 }
 header nav h1 {
   float: left;
@@ -903,9 +907,18 @@ header nav h1 {
   line-height: inherit;
   margin: 0;
   text-align: left;
+  display: flex;
+}
+header nav h1 img{
+  width: 1.3em;
+  height: auto;
+  margin-right: 0.2em;
+}
+header nav h1 img + a {
+  font-weight: 700;
 }
 header nav a {
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   font-family: var(--font-family);
   color: #181818;
