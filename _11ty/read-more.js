@@ -1,10 +1,11 @@
 /**
  * generate read-more section of a post
  */
+const { JSDOM } = require("jsdom");
+
 const tag = '<!--more-->';
 const excerpt = (content) => content.split(tag)[0];
 const checkHasReadMore = (content) => content.includes(tag);
-const regex = /<p>(.*?)<\/p>/i;
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('excerpt', (content) => {
@@ -12,7 +13,8 @@ module.exports = function(eleventyConfig) {
             return excerpt(content);
         }
         else {
-            return regex.test(content) ? regex.exec(content)[0]: '';
+            const dom = new JSDOM(content);
+            return dom.window.document.querySelector('p').outerHTML;
         }
     });
 };
