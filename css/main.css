@@ -1151,3 +1151,9 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
+
+code,
+kbd {
+  background: var(--shade-dark);
+  color: var(--accent-light);
+}
