@@ -426,24 +426,24 @@ h2 {
   line-height: 1.2;
   margin-bottom: 0.6em;
 }
-h3, h2.post-title {
+h3 {
   font-size: 2em;
   line-height: 1.125;
   margin-bottom: 0.75em;
 }
-h4 {
+h4, .post-title {
   font-size: 1.5em;
   margin-bottom: 1em;
 }
 h4,
-h5 {
+h5, .post-title {
   line-height: 1.5em;
 }
 h5 {
   font-size: 1.25em;
   margin-bottom: 1.2em;
 }
-h6 {
+h6, .homepage-desc {
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 1.5em;
@@ -473,19 +473,19 @@ h2 {
 h2 {
   font-size: 1.728rem;
 }
-h3, h2.post-title {
+h3 {
   font-size: 1.4rem;
 }
 h3,
-h4, h2.post-title {
+h4, .post-title {
   line-height: 1.6rem;
   margin-bottom: 1.36rem;
 }
-h4 {
+h4, .post-title {
   font-size: 1.2rem;
 }
 h5,
-h6 {
+h6, .homepage-desc {
   font-size: 1rem;
   line-height: 1.6rem;
   margin-bottom: 1.36rem;
@@ -517,24 +517,24 @@ ul {
     font-size: 3.1097rem;
     line-height: 3.52rem;
   }
-  h3, h2.post-title {
+  h3 {
     font-size: 2.1989rem;
     line-height: 2.64rem;
     margin-bottom: 1.496rem;
   }
-  h4 {
+  h4, .post-title {
     font-size: 1.5554rem;
   }
   h4,
-  h5 {
+  h5, .post-title {
     line-height: 1.76rem;
     margin-bottom: 1.496rem;
   }
   h5,
-  h6 {
+  h6, .homepage-desc {
     font-size: 1.1rem;
   }
-  h6 {
+  h6, .homepage-desc {
     line-height: 1.76rem;
     margin-bottom: 1.496rem;
   }
@@ -566,24 +566,24 @@ ul {
     font-size: 4.05rem;
     line-height: 4.8rem;
   }
-  h3, h2.post-title {
+  h3 {
     font-size: 2.7rem;
     line-height: 2.88rem;
     margin-bottom: 1.632rem;
   }
-  h4 {
+  h4, .post-title {
     font-size: 1.8rem;
   }
   h4,
-  h5 {
+  h5, .post-title {
     line-height: 1.92rem;
     margin-bottom: 1.632rem;
   }
   h5,
-  h6 {
+  h6, .homepage-desc {
     font-size: 1.2rem;
   }
-  h6 {
+  h6, .homepage-desc {
     line-height: 1.92rem;
     margin-bottom: 1.632rem;
   }
@@ -935,7 +935,6 @@ header nav label {
 main {
   max-width: 70rem;
   margin: 0 auto;
-  border-top: 0.5px solid #ccc;
 }
 footer {
   background: rgba(0, 0, 0, 0.8);
@@ -1166,6 +1165,22 @@ kbd {
   color: var(--accent-light);
 }
 
+.homepage-desc {
+  font-weight: 500;
+}
+
+.post {
+  margin-top: 1.2em;
+  padding-top: 1.2em;
+  border-top: 1px solid var(--shade);
+}
+
+.post:first-child {
+  margin-top: 0;
+}
+
 .post-info a {
   float: right;
 }
+
+

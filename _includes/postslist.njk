@@ -1,9 +1,9 @@
 <div id="postslist">
 {% for post in postslist | reverse %}
   <div class="post">
-    <h2 class="post-title">
+    <h3 class="post-title">
       <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h2>
+    </h3>
     <div class="post-desc">
       {{ post.templateContent | excerpt | safe }}
     </div>

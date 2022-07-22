@@ -74,6 +74,9 @@
         <div id="reading-progress" aria-hidden="true"></div>
       </nav>
       <h1>{{ title }}</h1>
+      {% if page.url and page.url == '/' %}
+        <h2 class="homepage-desc">{{ desc }}</h2>
+      {% endif %}
       {% block extraArticleHeader %}{% endblock %}
       <dialog id="message"></dialog>
       {% if googleanalytics %}
