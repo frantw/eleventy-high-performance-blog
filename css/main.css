@@ -1170,3 +1170,7 @@ kbd {
   background: var(--shade-dark);
   color: var(--accent-light);
 }
+
+.post-info a {
+  float: right;
+}
