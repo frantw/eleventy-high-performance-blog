@@ -5,7 +5,7 @@ date: 2017-12-10
 tags: 
  - AMP
  - SEO
-image: https://cdn-images-1.medium.com/max/1460/1*ClDLBc3jPb-Rg7h-fC5p_Q.png
+image: https://i.imgur.com/L5iho7Y.png
 layout: layouts/post.njk
 ---
 

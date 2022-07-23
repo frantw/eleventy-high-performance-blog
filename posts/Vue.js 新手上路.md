@@ -4,7 +4,7 @@ description: 初學 Vue.js 的心得筆記，著重介紹何謂資料綁定 (Dat
 date: 2018-02-03
 tags:
  - Vue.js
-image: https://cdn-images-1.medium.com/max/1920/1*nfvapd86apvGH-hNBYkYuw.png
+image: https://i.imgur.com/TPwUNzk.png
 layout: layouts/post.njk
 ---
 

@@ -27,7 +27,7 @@ layout: layouts/post.njk
 ![](https://i.imgur.com/fZnV9YR.png)
 
 Git 在做 merge 時，會自動判斷現在的狀況是否適合是使用 **fast-forward**，或是我們可以透過加上 `--ff` 或是 `--no-ff` 來強制設定是否使用 fast-forward，差別如下：
-![](https://cdn-images-1.medium.com/max/800/1*SjSWhbwhPqFUTlPL8IV2mg.png)
+![](https://i.imgur.com/vjc4D9q.png)
 
 `--no-ff` 會多出一個 merge commit，而 `--ff` 會直接視為 master 分支上多出的 commit。
 可視需求決定要使用哪種。
