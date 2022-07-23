@@ -1215,7 +1215,7 @@ kbd {
 .article-author {
   display: flex;
   padding: 1.5em 0;
-  margin: 3.0em 0;
+  margin: 3.0em 0 1.0em;
   border-top: solid 1px var(--shade);
   border-bottom: solid 1px var(--shade);
 }
@@ -1238,4 +1238,8 @@ kbd {
 
 .article-author-name {
   font-weight: 500;
+}
+
+.article-sharing {
+  text-align: right;
 }
