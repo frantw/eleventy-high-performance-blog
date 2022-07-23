@@ -80,7 +80,7 @@ share-widget button:active {
 }
 
 dialog {
-  background-color: #8dff80;
+  background-color: var(--accent-light);
   position: fixed;
   opacity: 0.9;
   z-index: 1000;
