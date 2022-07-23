@@ -13,7 +13,7 @@ layout: layouts/post.njk
 
 在 GitHub 上已有遠端 Repository 時，也許會事後反悔、想修改 Repo 名稱
 
-在這裡筆記一下這種情形下的標準做法
+在這裡筆記一下這種情形下的標準做法，避免影響到既有存在於遠端上的專案
 
 ## 修改遠端 Repo 名稱
 
