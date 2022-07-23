@@ -841,7 +841,6 @@ body {
 section {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
 }
 #menu-toggle {
   display: none;
@@ -1211,4 +1210,32 @@ kbd {
   .article-info {
     margin-top: -1.1em;
   }
+}
+
+.article-author {
+  display: flex;
+  padding: 1.5em 0;
+  margin: 3.0em 0;
+  border-top: solid 1px var(--shade);
+  border-bottom: solid 1px var(--shade);
+}
+
+.article-author-avatar {
+  width: 5em;
+  min-width: 100px;
+}
+
+.article-author-avatar img{
+  border-radius: 100%;
+}
+
+.article-author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 1.0em;
+}
+
+.article-author-name {
+  font-weight: 500;
 }

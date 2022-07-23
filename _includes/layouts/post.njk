@@ -19,8 +19,20 @@ templateClass: tmpl-post
 {% block article %}
 {{ content | safe }}
 
-<section class="article-footer">
+<section class="article-sharing">
   <a href="{{ shareUrl | safe }}" on-click="share">分享文章</a>
+</section>
+
+<section class="article-author">
+  <div class="article-author-avatar">
+    <img alt="metadata.author.name" src="/img/avatar.jpg">
+  </div>
+  <div class="article-author-info">
+    <div class="article-author-name">
+      <a href="/about/">{{ metadata.author.name }}</a>
+    </div>
+    <div class="article-author-desc">{{ metadata.author.description }}</div>
+  </div>
 </section>
 
 <script type="application/ld+json">
