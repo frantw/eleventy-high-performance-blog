@@ -58,7 +58,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 ```
 這會把 NVM 的 Repo 資料夾複製到 `~/.nvm`
-然後將 source line 加進 profile 設定檔中（`~/.bash_profile`、`~/.zshrc`、`~/.profile`或`~/.bashrc`）
+然後將 source line 加進 profile 設定檔中（ `~/.bash_profile` 、 `~/.zshrc` 、 `~/.profile` 或 `~/.bashrc` ）
 
 ## 透過 NVM 安裝 Node.js
 
@@ -199,7 +199,7 @@ vi ~/.zimrc
 zimfw install
 source ~/.zshrc
 ```
-`source ~/.zshrc` 會重新載入配置文件，當然也能直接重新啟動終端機來重載
+`source ~/.zshrc` 會重新載入配置文件，當然也能直接重新啟動終端機重載
 
 重載後便會進入 Powerlevel10k 的自動設定介面
 
