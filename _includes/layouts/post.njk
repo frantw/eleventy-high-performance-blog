@@ -8,8 +8,9 @@ templateClass: tmpl-post
 {% block extraArticleHeader %}
    {% set wc = content | striptags | wordcount %}
    {% set wPerMinute = (wc / 240) + 1 %}
-   <aside>
-     {{ wPerMinute | round }} min read.
+   <aside class="article-info">
+      <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}.</time>
+      {{ wPerMinute | round }} mins read
    </aside>
 {% endblock %}
 
@@ -18,7 +19,9 @@ templateClass: tmpl-post
 {% block article %}
 {{ content | safe }}
 
-<a href="{{ shareUrl | safe }}" on-click="share">分享文章</a>
+<section class="article-footer">
+  <a href="{{ shareUrl | safe }}" on-click="share">分享文章</a>
+</section>
 
 <script type="application/ld+json">
 {

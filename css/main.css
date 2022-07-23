@@ -98,10 +98,6 @@ dl {
   display: block !important;
 }
 
-header aside {
-  font-style: italic;
-}
-
 #nav {
   z-index: 2;
   position: relative;
@@ -426,24 +422,24 @@ h2 {
   line-height: 1.2;
   margin-bottom: 0.6em;
 }
-h3 {
+h3, .article-title {
   font-size: 2em;
   line-height: 1.125;
   margin-bottom: 0.75em;
 }
-h4, .post-title {
+h4, .post-title, .article-content h2 {
   font-size: 1.5em;
   margin-bottom: 1em;
 }
 h4,
-h5, .post-title {
+h5, .post-title, .article-content h2, .article-content h3 {
   line-height: 1.5em;
 }
-h5 {
+h5, .article-content h3 {
   font-size: 1.25em;
   margin-bottom: 1.2em;
 }
-h6, .homepage-desc {
+h6, .homepage-desc, .article-content h4 {
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 1.5em;
@@ -473,19 +469,19 @@ h2 {
 h2 {
   font-size: 1.728rem;
 }
-h3 {
+h3, .article-title {
   font-size: 1.4rem;
 }
 h3,
-h4, .post-title {
+h4, .article-title, .post-title, .article-content h2 {
   line-height: 1.6rem;
   margin-bottom: 1.36rem;
 }
-h4, .post-title {
+h4, .post-title, .article-content h2 {
   font-size: 1.2rem;
 }
 h5,
-h6, .homepage-desc {
+h6, .homepage-desc, .article-content h3, .article-content h4 {
   font-size: 1rem;
   line-height: 1.6rem;
   margin-bottom: 1.36rem;
@@ -517,24 +513,24 @@ ul {
     font-size: 3.1097rem;
     line-height: 3.52rem;
   }
-  h3 {
+  h3, .article-title {
     font-size: 2.1989rem;
     line-height: 2.64rem;
     margin-bottom: 1.496rem;
   }
-  h4, .post-title {
+  h4, .post-title, .article-content h2 {
     font-size: 1.5554rem;
   }
   h4,
-  h5, .post-title {
+  h5, .post-title, .article-content h2, .article-content h3 {
     line-height: 1.76rem;
     margin-bottom: 1.496rem;
   }
   h5,
-  h6, .homepage-desc {
+  h6, .homepage-desc, .article-content h3, .article-content h4 {
     font-size: 1.1rem;
   }
-  h6, .homepage-desc {
+  h6, .homepage-desc, .article-content h4 {
     line-height: 1.76rem;
     margin-bottom: 1.496rem;
   }
@@ -566,24 +562,24 @@ ul {
     font-size: 4.05rem;
     line-height: 4.8rem;
   }
-  h3 {
+  h3, .article-title {
     font-size: 2.7rem;
     line-height: 2.88rem;
     margin-bottom: 1.632rem;
   }
-  h4, .post-title {
+  h4, .post-title, .article-content h2 {
     font-size: 1.8rem;
   }
   h4,
-  h5, .post-title {
+  h5, .post-title, .article-content h2, .article-content h3 {
     line-height: 1.92rem;
     margin-bottom: 1.632rem;
   }
   h5,
-  h6, .homepage-desc {
+  h6, .homepage-desc, .article-content h3, .article-content h4 {
     font-size: 1.2rem;
   }
-  h6, .homepage-desc {
+  h6, .homepage-desc, .article-content h4 {
     line-height: 1.92rem;
     margin-bottom: 1.632rem;
   }
@@ -1125,7 +1121,7 @@ footer {
 }
 
 aside {
-  color: var(--shade);
+  color: var(--shade-dark);
 }
 
 input[type="submit"],
@@ -1165,10 +1161,12 @@ kbd {
   color: var(--accent-light);
 }
 
+/* Homepage */
 .homepage-desc {
   font-weight: 500;
 }
 
+/* Post List */
 .post {
   margin-top: 1.2em;
   padding-top: 1.2em;
@@ -1183,4 +1181,22 @@ kbd {
   float: right;
 }
 
+/* Article */
+.article-content {
+  padding-top: 0;
+}
 
+.article-image {
+  aspect-ratio: 2 / 1;
+}
+
+.article-title {
+  width: 100%;
+  text-align: left;
+}
+
+.article-info {
+  width: 100%;
+  text-align: left;
+  color: var(--shade);
+}
