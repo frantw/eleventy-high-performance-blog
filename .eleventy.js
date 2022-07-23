@@ -145,9 +145,18 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
-    );
+    const dt = DateTime.fromJSDate(dateObj, { zone: "utc" });
+    const dstr = dt.toFormat("LLL dd, yyyy");
+    const nth = (d) => {
+      if (d > 3 && d < 21) return "th";
+      switch (d % 10) {
+        case 1:  return "st";
+        case 2:  return "nd";
+        case 3:  return "rd";
+        default: return "th";
+      }
+    }
+    return dstr.split(",")[0] + nth(dt.day) + "," + dstr.split(",")[1];
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
