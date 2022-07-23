@@ -41,9 +41,9 @@ const quality = {
   default: 60,
 };
 
-module.exports = async function srcset(filename, format) {
+module.exports = async function srcset(filename, format, isRatio2to1) {
   const names = await Promise.all(
-    widths.map((w) => resize(filename, w, format))
+    widths.map((w) => resize(filename, w, format, isRatio2to1))
   );
   return {
     srcset: names.map((n, i) => `${n} ${widths[i]}w`).join(", "),
@@ -51,14 +51,14 @@ module.exports = async function srcset(filename, format) {
   };
 };
 
-async function resize(filename, width, format) {
-  const out = sizedName(filename, width, format);
+async function resize(filename, width, format, isRatio2to1) {
+  const out = sizedName(filename, width, format, isRatio2to1);
   if (await exists("_site" + out)) {
     return out;
   }
   await sharp("_site" + filename)
     .rotate() // Manifest rotation from metadata
-    .resize(width)
+    .resize(width, isRatio2to1 ? width / 2: null)
     [format]({
       quality: quality[format] || quality.default,
       reductionEffort: 6,

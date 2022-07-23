@@ -36,6 +36,7 @@ const { gif2mp4 } = require("./video-gif");
 
 const processImage = async (img, outputPath) => {
   let src = img.getAttribute("src");
+  const isRatio2to1 = img.className == 'article-image';
   if (/^(https?\:\/\/|\/\/)/i.test(src)) {
     return;
   }
@@ -57,7 +58,7 @@ const processImage = async (img, outputPath) => {
   }
   if (!img.getAttribute("width")) {
     img.setAttribute("width", dimensions.width);
-    img.setAttribute("height", dimensions.height);
+    img.setAttribute("height", isRatio2to1 ? dimensions.width / 2: dimensions.height);
   }
   const inputType = dimensions.type;
   if (inputType == "svg") {
@@ -99,11 +100,11 @@ const processImage = async (img, outputPath) => {
     const avif = doc.createElement("source");
     const webp = doc.createElement("source");
     const jpeg = doc.createElement("source");
-    await setSrcset(avif, src, "avif");
+    await setSrcset(avif, src, "avif", isRatio2to1);
     avif.setAttribute("type", "image/avif");
-    await setSrcset(webp, src, "webp");
+    await setSrcset(webp, src, "webp", isRatio2to1);
     webp.setAttribute("type", "image/webp");
-    const fallback = await setSrcset(jpeg, src, fallbackType);
+    const fallback = await setSrcset(jpeg, src, fallbackType, isRatio2to1);
     jpeg.setAttribute("type", `image/${fallbackType}`);
     picture.appendChild(avif);
     picture.appendChild(webp);
@@ -112,13 +113,13 @@ const processImage = async (img, outputPath) => {
     picture.appendChild(img);
     img.setAttribute("src", fallback);
   } else if (!img.getAttribute("srcset")) {
-    const fallback = await setSrcset(img, src, fallbackType);
+    const fallback = await setSrcset(img, src, fallbackType, isRatio2to1);
     img.setAttribute("src", fallback);
   }
 };
 
-async function setSrcset(img, src, format) {
-  const setInfo = await srcset(src, format);
+async function setSrcset(img, src, format, isRatio2to1) {
+  const setInfo = await srcset(src, format, isRatio2to1);
   img.setAttribute("srcset", setInfo.srcset);
   img.setAttribute(
     "sizes",
