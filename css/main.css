@@ -1157,6 +1157,7 @@ a {
 
 code,
 kbd {
+  font-family: "Source Code Pro", monospace;
   background: var(--shade-dark);
   color: var(--accent-light);
 }
