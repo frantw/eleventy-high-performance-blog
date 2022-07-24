@@ -73,7 +73,7 @@
         </div>
         <div id="reading-progress" aria-hidden="true"></div>
       </nav>
-      {% if page.url and page.url == '/' %}
+      {% if page.url and (page.url == '/' or page.url.startsWith('/page/')) %}
         <h1 class="homepage-title">{{ title }}</h1>
         <h2 class="homepage-desc">{{ desc }}</h2>
       {% elif page.url and page.url.indexOf("/posts/") > -1 %}
