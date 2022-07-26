@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Hi, I'm Faith.
+title: Hi, I'm Fran.
 templateClass: tmpl-post
 eleventyNavigation:
   key: About
