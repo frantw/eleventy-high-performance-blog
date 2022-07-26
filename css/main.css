@@ -1332,3 +1332,50 @@ kbd {
 .timeline-item:not(:first-child) {
   padding-top: 0.75em;
 }
+
+/* Tag List */
+#tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tag a {
+  display: inline-flex;
+  background: var(--primary-dark);
+  color: var(--btn-text);
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.8rem;
+  height: 2em;
+  line-height: 2em;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tag a:hover {
+  text-decoration: none;
+}
+
+.tag-main {
+  height: 2em;
+  line-height: 2em;
+  padding-left: 0.75em;
+  padding-right: 0.5em;
+  background: var(--primary-dark);
+  color: var(--btn-text);
+}
+
+.tag-aside {
+  height: 2em;
+  line-height: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.75em;
+  background: var(--btn-primary);
+}
+
