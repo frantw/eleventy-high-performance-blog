@@ -58,7 +58,7 @@ async function resize(filename, width, format, isRatio2to1) {
   }
   await sharp("_site" + filename)
     .rotate() // Manifest rotation from metadata
-    .resize(width, isRatio2to1 ? width / 2: null)
+    .resize(width, isRatio2to1 ? width / 2: null, { fit: isRatio2to1 ? 'fill': undefined })
     [format]({
       quality: quality[format] || quality.default,
       reductionEffort: 6,
