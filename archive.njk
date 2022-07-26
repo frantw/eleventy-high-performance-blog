@@ -1,13 +1,17 @@
 ---
 layout: layouts/home.njk
-permalink: /archives/
 title: Archives
 eleventyNavigation:
   key: Archives
   order: 1
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+permalink: /archives/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
 ---
 
-<h1>文章列表</h1>
+{% set postslist = posts.reverse() %}
+{% include "timeline.njk" %}
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+{% include "pagination.njk" %}

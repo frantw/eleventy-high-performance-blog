@@ -1,0 +1,23 @@
+{% set flagYear = '2099' %}
+
+<div id="timeline">
+    {% for post in postslist | reverse %}
+        {% set postDate = post.date | htmlDateString %}
+        {% set postYear = postDate.slice(0, 4) %}
+
+        {% if postYear != flagYear %}
+            {% set flagYear = postYear %}
+            {% if not loop.first %}</ul>{% endif %}
+            <ul class="timeline-group" title="{{ postYear }}">
+        {% endif %}
+
+        <li class="timeline-item">
+            <time  datetime="{{ postDate }}">{{ postDate }}</time>
+            <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+        </li>
+
+        {% if loop.last %}
+            </ul>
+        {% endif %}
+    {% endfor %}
+</div>
