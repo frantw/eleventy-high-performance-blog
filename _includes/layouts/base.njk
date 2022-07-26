@@ -102,8 +102,10 @@
       </article>
     </main>
 
-    <footer class="{% if page.url and page.url.indexOf("/posts/") > -1 %}article-footer{% endif %}">
-      <a href="/about/">{{ metadata.author.name }}</a>
+    <footer>
+      <p>© 2017-2022 {{ metadata.author.name }}<br>
+        <span>Based on <a href="https://github.com/google/eleventy-high-performance-blog" target="_blank" rel="noopener">eleventy-high-performance-blog</a><span>
+      </p>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->

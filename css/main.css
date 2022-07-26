@@ -947,7 +947,10 @@ footer nav a img {
 }
 footer nav,
 footer p {
-  font-size: 90%;
+  font-size: 0.8em;
+}
+footer span {
+  font-size: 0.75em;
 }
 article {
   max-width: 100%;
@@ -1381,3 +1384,7 @@ kbd {
   background: var(--btn-primary);
 }
 
+/* Footer */
+footer span {
+  color: var(--accent-dark);
+}
