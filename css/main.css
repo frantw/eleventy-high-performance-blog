@@ -1253,7 +1253,9 @@ kbd {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  margin-top: 4.5em;
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: solid 1px var(--shade);
 }
 
 #pagination-prev {
