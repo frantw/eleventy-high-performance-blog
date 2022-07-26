@@ -3,15 +3,17 @@
   --primary: #41bcc2;
   --primary-dark: #287b7f;
   --accent-light: #fad24c;
-  --accent-dark: #92847d;
-  --shade: #aebebe;
-  --shade-light: #f5f7f7;
-  --shade-dark: #2c3e58;
-  --btn-primary: #3fbfc5;
-  --btn-info: #2c3e58;
-  --btn-success: #48b473;
-  --btn-warning: #c5a43b;
+  --accent-dark: #919693;
+  --shade: #aec0c0;
+  --shade-light: #f6f8f8;
+  --shade-dark: #3a3c57;
+  --btn-default: #999999;
+  --btn-primary: #43bcc3;
+  --btn-info: #3a3c57;
+  --btn-success: #49b373;
+  --btn-warning: #c7a33b;
   --btn-danger: #f44336;
+  --btn-text: #ffffff;
 }
 
 .test-dead-code-elimination-sentinel {
