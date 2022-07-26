@@ -158,7 +158,7 @@ gulp.task('watch', function() {
 
 每當有新專案時，只要複製前個專案的 `package.json` 和 `gulpfile.js` 再執行 `npm install` 就可以了。
 
-我也把模板放上了 [Github](https://github.com/keepfa1th/GulpTemplate)，日後也可以直接 fork 下來。
+我也把模板放上了 [Github](https://github.com/frantw/GulpTemplate)，日後也可以直接 fork 下來。
 
 ## 參考資料
 
