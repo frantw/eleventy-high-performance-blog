@@ -1,12 +1,14 @@
 ---
 layout: layouts/base.njk
-title: About
+title: Hi, I'm Faith.
 templateClass: tmpl-post
 eleventyNavigation:
   key: About
   order: 3
 ---
 
-I am a person that writes stuff.
+一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。
 
-This blog template is based on [eleventy-high-performance-blog](https://www.industrialempathy.com/posts/eleventy-high-performance-blog/) which itself is based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
+而話語是打動人心的魔法——嘗試在這裡留下一點隻字片語，將路經的絆腳石變成幫助你我前進的踏腳石。
+
+如有問題，歡迎利用留言功能，或者經由電子郵件等方式聯繫我！
