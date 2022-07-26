@@ -12,7 +12,7 @@ eleventyNavigation:
   {% set tagUrl %}/tags/{{ tag.name | slugify }}/{% endset %}
   <li class="tag">
     <a href="{{ tagUrl | url }}">
-      <span class="tag-main">{{ tag.name }}</span>
+      <span class="tag-main">#{{ tag.name }}</span>
       <span class="tag-aside">{{ tag.count }}</span>
     </a>
   </li>
