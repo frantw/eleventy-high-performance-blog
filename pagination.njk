@@ -1,0 +1,38 @@
+{% if pagination.pages.length > 1 %}
+{% set currentPage = 0 %}
+{%- for pageEntry in pagination.pages %}
+    {% set isCurrent = (page.url == pagination.hrefs[ loop.index0 ]) %}
+    {% if isCurrent %}
+      {% set currentPage = loop.index0 %}
+    {% endif %}
+{%- endfor %}
+
+<nav id="pagination">
+    <div id="pagination-prev">
+    {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">上一頁</a>
+    {% else %}
+        <div style="visibility:hidden">上一頁</div>
+    {% endif %}
+    </div>
+
+    <div id="pagination-next">
+    {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}">下一頁</a>
+    {% else %}
+        <div style="visibility:hidden">下一頁</div>
+    {% endif %}
+    </div>
+
+    <ol id="pagination-list">
+    {%- for pageEntry in pagination.pages %}
+        {% if (currentPage >= loop.index0 - 2) and (currentPage <= loop.index0 + 2) %}
+        {% set isCurrent = (page.url == pagination.hrefs[ loop.index0 ]) %}
+        <li {% if isCurrent %} class="current"{% endif %}>
+            <a {% if isCurrent %} aria-current="page"{% endif %} class="pagination-link" href="{{ pagination.hrefs[ loop.index0 ] }}">{{ loop.index }}</a>
+        </li>
+        {% endif %}
+    {%- endfor %}
+    </ol>
+</nav>
+{% endif %}

@@ -13,3 +13,5 @@ permalink: /{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 
 
 {% set postslist = posts.reverse() %}
 {% include "postslist.njk" %}
+
+{% include "pagination.njk" %}
