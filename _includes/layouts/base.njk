@@ -64,7 +64,9 @@
         <div id="nav">
           <h1>
             <img alt="{{ metadata.title }} logo" src="/favicon.svg">
-            <a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a>
+            <a href="{{ '/' | url }}" title="Homepage">
+              {{ metadata.domain.charAt(0).toUpperCase() + metadata.domain.slice(1) }}
+            </a>
           </h1>
           {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
           {%- for entry in collections.all | eleventyNavigation %}
