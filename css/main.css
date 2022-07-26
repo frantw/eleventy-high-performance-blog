@@ -1225,9 +1225,11 @@ kbd {
   border-bottom: solid 1px var(--shade);
 }
 
-.article-author-avatar {
+.article-author-avatar, .article-author-avatar img {
   width: 5em;
   min-width: 100px;
+  height: 5em;
+  min-height: 100px;
 }
 
 .article-author-avatar img{
