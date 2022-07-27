@@ -69,9 +69,22 @@
             </a>
           </h1>
           {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-          {%- for entry in collections.all | eleventyNavigation %}
-            <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-          {%- endfor %}
+          <div class="nav-menu">
+            {%- for entry in collections.all | eleventyNavigation %}
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            {%- endfor %}
+            <input id="nav-toggle" type="checkbox"></input>
+            <label for="nav-toggle" class="hamburger-icon">
+              <div class="hamburger-icon-top"></div>
+              <div class="hamburger-icon-center"></div>
+              <div class="hamburger-icon-bottom"></div>
+            </label>
+            <div class="nav-links">
+            {%- for entry in collections.all | eleventyNavigation %}
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            {%- endfor %}
+            </div>
+          </div>
         </div>
         <div id="reading-progress" aria-hidden="true"></div>
       </nav>
