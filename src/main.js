@@ -229,9 +229,9 @@ if (window.ResizeObserver && document.querySelector("header nav #nav") && /\/pos
   }
 
   new ResizeObserver(() => {
+    const footerElement = document.querySelector(".article-author-info,footer");
     bottom =
-      document.scrollingElement.scrollTop +
-      document.querySelector(".article-author-info,footer").getBoundingClientRect().top;
+      document.scrollingElement.scrollTop + (footerElement ? footerElement.getBoundingClientRect().top: 0);
     winHeight = window.innerHeight;
     scroll();
   }).observe(document.body);
