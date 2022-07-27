@@ -15,8 +15,10 @@ module.exports = () => {
     eleventyComputed: {
       eleventyExcludeFromCollections: (data) =>
         showDraft(data) ? data.eleventyExcludeFromCollections : true,
-      permalink: (data) => (showDraft(data) ? ( data.permalink || `/posts/${crc32(data.title).toString(16)}/`) : false),
-      tags: (data) => "tags" in data ? [...data.tags, "posts"]: ["posts"],
+      permalink: (data) => 
+        showDraft(data) ? ( data.permalink || `/posts/${crc32(data.title).toString(16)}/`) : false,
+      tags: (data) =>
+        "tags" in data ? [...data.tags, "posts"]: ["posts"],
     },
   };
 };
