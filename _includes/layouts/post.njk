@@ -19,6 +19,23 @@ templateClass: tmpl-post
 {% block article %}
 {{ content | safe }}
 
+<section class="article-bottom">
+  <ul class="article-tags-list">
+  {% for tag in tags %}
+    {% if tag != 'posts' %}
+      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+      <li class="tag">
+        <a href="{{ tagUrl | url }}">#{{ tag }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+
+  <div class="article-sharing">
+    <a href="{{ shareUrl | safe }}" on-click="share">分享文章</a>
+  </div>
+</section>
+
 <section class="article-author">
   <div class="article-author-avatar">
     <img alt="metadata.author.name" src="/img/avatar.jpg">
@@ -29,10 +46,6 @@ templateClass: tmpl-post
     </div>
     <div class="article-author-desc">{{ metadata.author.description }}</div>
   </div>
-</section>
-
-<section class="article-sharing">
-  <a href="{{ shareUrl | safe }}" on-click="share">分享文章</a>
 </section>
 
 <script type="application/ld+json">

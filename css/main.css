@@ -1217,10 +1217,22 @@ kbd {
   }
 }
 
+.article-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.0em;
+  flex-wrap: wrap;
+}
+
+.article-sharing {
+  text-align: right;
+  white-space: nowrap;
+}
+
 .article-author {
   display: flex;
   padding: 1.5em 0;
-  margin: 3.0em 0 1.0em;
+  margin: 1.0em 0;
   border-top: solid 1px var(--shade);
   border-bottom: solid 1px var(--shade);
 }
@@ -1245,10 +1257,6 @@ kbd {
 
 .article-author-name {
   font-weight: 500;
-}
-
-.article-sharing {
-  text-align: right;
 }
 
 /* Pagination */
@@ -1341,7 +1349,7 @@ kbd {
 }
 
 /* Tag List */
-#tags-list {
+#tags-list, .article-tags-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1384,6 +1392,11 @@ kbd {
   padding-left: 0.5em;
   padding-right: 0.75em;
   background: var(--btn-primary);
+}
+
+.article-tags-list .tag a {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
 }
 
 /* Footer */
