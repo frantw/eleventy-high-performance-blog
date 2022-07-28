@@ -255,7 +255,9 @@ addEventListener("click", (e) => {
   fn(handler);
 });
 
-let isDark = window.matchMedia("(prefers-color-scheme: dark)").matches || localStorage.getItem('isDarkTheme');
+let isDark = localStorage.getItem('isDarkTheme');
+isDark = isDark === null ? window.matchMedia("(prefers-color-scheme: dark)").matches: (isDark === 'true');
+
 if (isDark) {
 	document.body.setAttribute("class", "dark-mode");
   localStorage.setItem('isDarkTheme', true);
