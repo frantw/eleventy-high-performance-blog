@@ -78,6 +78,10 @@ header nav {
     --main-width: calc(37.5em - 3em);
   }
 }
+
+.giscus-frame {
+  padding: 0 1px;
+}
 /*! purgecss end ignore */
 
 share-widget {

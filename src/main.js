@@ -255,6 +255,12 @@ addEventListener("click", (e) => {
   fn(handler);
 });
 
+function sendMessage(message) {
+  const iframe = document.querySelector('iframe.giscus-frame');
+  if (!iframe) return;
+  iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+}
+
 let isDark = localStorage.getItem('isDarkTheme');
 isDark = isDark === null ? window.matchMedia("(prefers-color-scheme: dark)").matches: (isDark === 'true');
 
@@ -273,14 +279,31 @@ addEventListener("click", (e) => {
   }
   if ((switchColor.id == 'switch-color-theme' && isDark) || switchColor.id == 'switch-to-light') {
     document.body.setAttribute("class", "light-mode");
+    sendMessage({setConfig: {theme: 'light'}});
     localStorage.setItem('isDarkTheme', false);
     isDark = false;
   }
   else {
     document.body.setAttribute("class", "dark-mode");
+    sendMessage({setConfig: {theme: 'dark_dimmed'}});
     localStorage.setItem('isDarkTheme', true);
     isDark = true;
   }
+});
+
+let giscusIframeLoaded = false;
+window.addEventListener('message', (event) => {
+  if (event.origin !== 'https://giscus.app') return;
+  if (!(typeof event.data === 'object' && event.data.giscus)) return;
+  if (!giscusIframeLoaded) {
+    giscusIframeLoaded = true;
+    sendMessage({setConfig: {theme: isDark ? 'dark_dimmed': 'light'}});
+  }
+  const giscusData = event.data.giscus;
+  // Do whatever you want with it, e.g. `console.log(giscusData)`.
+  // You'll need to make sure that `giscusData` contains the message you're
+  // expecting, e.g. by using `if ('discussion' in giscusData)`.
+  // See: https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#giscus-to-parent-message-events
 });
 
 function removeBlurredImage(img) {
