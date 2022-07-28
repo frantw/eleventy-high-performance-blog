@@ -27,6 +27,7 @@
   --badge: var(--btn-primary);
   --tag: var(--btn-text);
   --code: #a84caa;
+  --full-screen: var(--btn-text);
 }
 
 .dark-mode {
@@ -38,6 +39,7 @@
   --badge: var(--shade);
   --tag: var(--shade-dark);
   --code: #45c8ce;
+  --full-screen: var(--shade-dark);
 }
 
 .test-dead-code-elimination-sentinel {
@@ -1202,7 +1204,7 @@ kbd {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: var(--text);
+  background-color: var(--full-screen);
   top: -100%;
   left: 0;
   right: 0;
@@ -1219,7 +1221,7 @@ kbd {
 #nav-toggle + .hamburger-icon + .nav-links a {
   margin-left: 0;
   margin-right: 0;
-  color: var(--background);
+  color: var(--text);
   font-size: 1.25em;
   margin-top: 1em;
 }
