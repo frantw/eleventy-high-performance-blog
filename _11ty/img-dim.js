@@ -36,7 +36,7 @@ const { gif2mp4 } = require("./video-gif");
 
 const processImage = async (img, outputPath) => {
   let src = img.getAttribute("src");
-  const isRatio2to1 = img.className == 'article-image';
+  const isArticleBannerImage = img.className == 'article-image';
   if (/^(https?\:\/\/|\/\/)/i.test(src)) {
     return;
   }
@@ -58,7 +58,7 @@ const processImage = async (img, outputPath) => {
   }
   if (!img.getAttribute("width")) {
     img.setAttribute("width", dimensions.width);
-    img.setAttribute("height", isRatio2to1 ? dimensions.width / 2: dimensions.height);
+    img.setAttribute("height", isArticleBannerImage ? dimensions.width / 2: dimensions.height);
   }
   const inputType = dimensions.type;
   if (inputType == "svg") {
@@ -89,7 +89,7 @@ const processImage = async (img, outputPath) => {
   const fallbackType = inputType == "png" ? "png" : "jpeg";
   if (img.tagName == "IMG") {
     img.setAttribute("decoding", "async");
-    img.setAttribute("loading", "lazy");
+    img.setAttribute("loading", isArticleBannerImage ? "eager": "lazy");
     img.setAttribute(
       "style",
       `background-size:cover;` +
@@ -100,11 +100,11 @@ const processImage = async (img, outputPath) => {
     const avif = doc.createElement("source");
     const webp = doc.createElement("source");
     const jpeg = doc.createElement("source");
-    await setSrcset(avif, src, "avif", isRatio2to1);
+    await setSrcset(avif, src, "avif", isArticleBannerImage);
     avif.setAttribute("type", "image/avif");
-    await setSrcset(webp, src, "webp", isRatio2to1);
+    await setSrcset(webp, src, "webp", isArticleBannerImage);
     webp.setAttribute("type", "image/webp");
-    const fallback = await setSrcset(jpeg, src, fallbackType, isRatio2to1);
+    const fallback = await setSrcset(jpeg, src, fallbackType, isArticleBannerImage);
     jpeg.setAttribute("type", `image/${fallbackType}`);
     picture.appendChild(avif);
     picture.appendChild(webp);
@@ -113,7 +113,7 @@ const processImage = async (img, outputPath) => {
     picture.appendChild(img);
     img.setAttribute("src", fallback);
   } else if (!img.getAttribute("srcset")) {
-    const fallback = await setSrcset(img, src, fallbackType, isRatio2to1);
+    const fallback = await setSrcset(img, src, fallbackType, isArticleBannerImage);
     img.setAttribute("src", fallback);
   }
 };
