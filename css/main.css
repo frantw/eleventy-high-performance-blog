@@ -64,7 +64,7 @@ header nav {
   --badge: var(--btn-primary);
   --tag: var(--btn-text);
   --code: #a84caa;
-  --full-screen: var(--btn-text);
+  --full-screen: #f8fafa;
 }
 
 .dark-mode {
