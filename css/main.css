@@ -69,7 +69,7 @@ header nav {
 
 .dark-mode {
   --text: var(--shade-light);
-  --background: #3c4858;
+  --background: #34364e;
   --anchor: var(--accent-light);
   --desc: var(--shade);
   --highlight: var(--accent-light);
@@ -96,7 +96,7 @@ header nav {
 @media (prefers-color-scheme: dark) {
   :root {
     --text: var(--shade-light);
-    --background: #3c4858;
+    --background: #34364e;
     --anchor: var(--accent-light);
     --desc: var(--shade);
     --highlight: var(--accent-light);
