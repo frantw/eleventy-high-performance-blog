@@ -60,9 +60,9 @@
     <script csp-hash>if (/Mac OS X/.test(navigator.userAgent))document.documentElement.classList.add('apple')
     </script>
     <!-- css is inserted by optimize-html custom plugin -->
-    <script src="{{ "/js/utils.js" | addHash }}"></script>
   </head>
   <body>
+    <script src="{{ "/js/utils.js" | addHash }}"></script>
     <header class="{% if page.url and page.url.indexOf("/posts/") > -1 %}article-header{% endif %}">
       <nav>
         <div id="nav">
