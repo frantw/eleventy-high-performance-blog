@@ -255,6 +255,32 @@ addEventListener("click", (e) => {
   fn(handler);
 });
 
+let isDark = window.matchMedia("(prefers-color-scheme: dark)").matches || localStorage.getItem('isDarkTheme');
+if (isDark) {
+	document.body.setAttribute("class", "dark-mode");
+  localStorage.setItem('isDarkTheme', true);
+} else {
+	document.body.setAttribute("class", "light-mode");
+  localStorage.setItem('isDarkTheme', false);
+}
+
+addEventListener("click", (e) => {
+  var switchColor = e.target.closest("#switch-color-theme, #switch-to-light, #switch-to-dark");
+  if (!switchColor) {
+    return;
+  }
+  if ((switchColor.id == 'switch-color-theme' && isDark) || switchColor.id == 'switch-to-light') {
+    document.body.setAttribute("class", "light-mode");
+    localStorage.setItem('isDarkTheme', false);
+    isDark = false;
+  }
+  else {
+    document.body.setAttribute("class", "dark-mode");
+    localStorage.setItem('isDarkTheme', true);
+    isDark = true;
+  }
+});
+
 function removeBlurredImage(img) {
   // Ensure the browser doesn't try to draw the placeholder when the real image is present.
   img.style.backgroundImage = "none";

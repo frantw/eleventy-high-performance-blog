@@ -59,7 +59,7 @@
     </script>
     <!-- css is inserted by optimize-html custom plugin -->
   </head>
-  <body>
+  <body class="light-mode dark-mode">
     <header class="{% if page.url and page.url.indexOf("/posts/") > -1 %}article-header{% endif %}">
       <nav>
         <div id="nav">
@@ -74,6 +74,7 @@
             {%- for entry in collections.all | eleventyNavigation %}
               <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             {%- endfor %}
+            <button id="switch-color-theme"></button>
             <input id="nav-toggle" type="checkbox"></input>
             <label for="nav-toggle" class="hamburger-icon">
               <div class="hamburger-icon-top"></div>
@@ -84,6 +85,8 @@
             {%- for entry in collections.all | eleventyNavigation %}
               <a href="{{ entry.url | url }}">{{ entry.title }}</a>
             {%- endfor %}
+              <a void id="switch-to-light">Light Mode</a>
+              <a void id="switch-to-dark">Dark Mode</a>
             </div>
           </div>
         </div>
