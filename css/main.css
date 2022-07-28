@@ -65,13 +65,9 @@ share-widget {
 share-widget div {
   width: 30px;
   height: 30px;
-  background-image: url("/img/share.svg");
+  background-image: url("/img/icons/share.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.apple share-widget div {
-  background-image: url("/img/share-apple.svg");
 }
 
 share-widget button {
