@@ -264,14 +264,6 @@ function sendMessage(message) {
 let isDark = localStorage.getItem('isDarkTheme');
 isDark = isDark === null ? window.matchMedia("(prefers-color-scheme: dark)").matches: (isDark === 'true');
 
-if (isDark) {
-	document.body.setAttribute("class", "dark-mode");
-  localStorage.setItem('isDarkTheme', true);
-} else {
-	document.body.setAttribute("class", "light-mode");
-  localStorage.setItem('isDarkTheme', false);
-}
-
 addEventListener("click", (e) => {
   var switchColor = e.target.closest("#switch-color-theme, #switch-to-light, #switch-to-dark");
   if (!switchColor) {

@@ -3,6 +3,8 @@ node_modules/
 .DS_Store
 js/min.js
 js/min.js.map
+js/utils.js
+js/utils.js.map
 .vscode/
 .netlify/
 export
