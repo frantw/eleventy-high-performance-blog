@@ -615,7 +615,10 @@ thead th {
   border-bottom: 1px solid #f9c412;
 }
 table {
-  display: table;
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  white-space: nowrap;
 }
 code,
 pre,
