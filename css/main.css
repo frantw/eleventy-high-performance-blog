@@ -7,18 +7,6 @@
   --shade: #aec0c0;
   --shade-light: #f6f8f8;
   --shade-dark: #3a3c57;
-}
-
-:root {
-  --text: var(--shade-dark);
-  --background: var(--shade-light);
-
-  --mark: var(--primary);
-  --anchor: var(--primary-dark);
-  --desc: var(--accent-dark);
-  --highlight: var(--accent-light);
-  --border: var(--shade);
-  --code: #a84caa;
 
   --btn-default: #999999;
   --btn-primary: #43bcc3;
@@ -27,6 +15,29 @@
   --btn-warning: #c7a33b;
   --btn-danger: #f44336;
   --btn-text: #ffffff;
+  --border: var(--shade);
+}
+
+:root .light-mode {
+  --text: var(--shade-dark);
+  --background: var(--shade-light);
+  --anchor: var(--primary-dark);
+  --desc: var(--accent-dark);
+  --highlight: var(--accent-light);
+  --badge: var(--btn-primary);
+  --tag: var(--btn-text);
+  --code: #a84caa;
+}
+
+:root .dark-mode {
+  --text: var(--shade-light);
+  --background: #3c4858;
+  --anchor: var(--accent-light);
+  --desc: var(--shade);
+  --highlight: var(--accent-light);
+  --badge: var(--shade);
+  --tag: var(--shade-dark);
+  --code: #45c8ce;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -118,7 +129,7 @@ dl {
 
 #reading-progress {
   z-index: 1;
-  background-color: var(--mark);
+  background-color: var(--primary);
   width: 100vw;
   position: absolute;
   left: 0;
@@ -1152,15 +1163,15 @@ button:not([disabled]):hover {
 }
 
 dd + dt {
-  border-top: 1px solid var(--mark);
+  border-top: 1px solid var(--primary);
 }
 
 blockquote {
-  border-left: 1px solid var(--mark);
+  border-left: 1px solid var(--primary);
 }
 
 mark {
-  background: var(--mark);
+  background: var(--primary);
 }
 
 a {
@@ -1168,7 +1179,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--mark);
+  background: var(--primary);
 }
 
 code,
@@ -1463,7 +1474,7 @@ kbd {
 .tag a {
   display: inline-flex;
   background: var(--anchor);
-  color: var(--btn-text);
+  color: var(--tag);
   margin-bottom: 0.5em;
   margin-right: 0.5em;
   font-size: 0.8rem;
@@ -1486,7 +1497,7 @@ kbd {
   padding-left: 0.75em;
   padding-right: 0.5em;
   background: var(--anchor);
-  color: var(--btn-text);
+  color: var(--tag);
 }
 
 .tag-aside {
@@ -1494,7 +1505,7 @@ kbd {
   line-height: 2em;
   padding-left: 0.5em;
   padding-right: 0.75em;
-  background: var(--btn-primary);
+  background: var(--badge);
 }
 
 .article-tags-list .tag a {
