@@ -1218,12 +1218,16 @@ kbd {
   text-align: left;
 }
 
-#nav-toggle + .hamburger-icon + .nav-links a {
+#nav-toggle + .hamburger-icon + .nav-links a,
+#nav-toggle + .hamburger-icon + .nav-links button {
   margin-left: 0;
   margin-right: 0;
   color: var(--text);
   font-size: 1.25em;
   margin-top: 1em;
+  padding: 0;
+  background: transparent;
+  text-align: left;
 }
 
 #nav-toggle {
