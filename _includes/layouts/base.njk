@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicon/favicon-32x32.png' | addHash }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicon/favicon-16x16.png' | addHash }}">
     {% endif %}
+    <link rel="preload" href="/favicon.svg" as="image" />
     <meta name="theme-color" content="#f9c412">
     <meta name="robots" content="max-snippet:-1, max-image-preview: large, max-video-preview: -1">
     <title>{{ renderData.title or title or metadata.title | escape }}</title>
