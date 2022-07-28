@@ -18,30 +18,6 @@
   --border: var(--shade);
 }
 
-.light-mode {
-  --text: var(--shade-dark);
-  --background: var(--shade-light);
-  --anchor: var(--primary-dark);
-  --desc: var(--accent-dark);
-  --highlight: var(--accent-light);
-  --badge: var(--btn-primary);
-  --tag: var(--btn-text);
-  --code: #a84caa;
-  --full-screen: var(--btn-text);
-}
-
-.dark-mode {
-  --text: var(--shade-light);
-  --background: #3c4858;
-  --anchor: var(--accent-light);
-  --desc: var(--shade);
-  --highlight: var(--accent-light);
-  --badge: var(--shade);
-  --tag: var(--shade-dark);
-  --code: #45c8ce;
-  --full-screen: var(--shade-dark);
-}
-
 .test-dead-code-elimination-sentinel {
   color: red;
 }
@@ -76,6 +52,58 @@ header nav {
 @media (min-width: 37.5em) {
   :root {
     --main-width: calc(37.5em - 3em);
+  }
+}
+
+.light-mode {
+  --text: var(--shade-dark);
+  --background: var(--shade-light);
+  --anchor: var(--primary-dark);
+  --desc: var(--accent-dark);
+  --highlight: var(--accent-light);
+  --badge: var(--btn-primary);
+  --tag: var(--btn-text);
+  --code: #a84caa;
+  --full-screen: var(--btn-text);
+}
+
+.dark-mode {
+  --text: var(--shade-light);
+  --background: #3c4858;
+  --anchor: var(--accent-light);
+  --desc: var(--shade);
+  --highlight: var(--accent-light);
+  --badge: var(--shade);
+  --tag: var(--shade-dark);
+  --code: #45c8ce;
+  --full-screen: var(--shade-dark);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: var(--shade-dark);
+    --background: var(--shade-light);
+    --anchor: var(--primary-dark);
+    --desc: var(--accent-dark);
+    --highlight: var(--accent-light);
+    --badge: var(--btn-primary);
+    --tag: var(--btn-text);
+    --code: #a84caa;
+    --full-screen: var(--btn-text);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: var(--shade-light);
+    --background: #3c4858;
+    --anchor: var(--accent-light);
+    --desc: var(--shade);
+    --highlight: var(--accent-light);
+    --badge: var(--shade);
+    --tag: var(--shade-dark);
+    --code: #45c8ce;
+    --full-screen: var(--shade-dark);
   }
 }
 
