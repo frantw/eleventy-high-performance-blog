@@ -1272,6 +1272,10 @@ kbd {
   margin-top: 0;
 }
 
+.post-info {
+  font-size: 0.8em;
+}
+
 .post-info a {
   float: right;
 }
