@@ -4,7 +4,8 @@
   "domain": "frannn.dev",
   "description": "一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。",
   "genre": "Insert a schema.org genre",
-  "googleAnalyticsId": "GA ID. Update me. Note, that this is not compatible with the not-yet-commonly used version 4 of Google Analytics",
+  "googleAnalyticsId": "UA-102201439-3",
+  "googleAnalytics4Id": "G-WPT921EDGX",
   "sendWebVitals": false,
   "feed": {
     "subtitle": "一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。",
