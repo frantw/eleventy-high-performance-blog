@@ -67,7 +67,7 @@
     <!-- css is inserted by optimize-html custom plugin -->
   </head>
   <body>
-    <script csp-hash>
+    <script csp-hash data-cfasync="false">
       (() => {
         let isDark = localStorage.getItem('isDarkTheme');
         isDark = isDark === null ? window.matchMedia("(prefers-color-scheme: dark)").matches: (isDark === 'true');
