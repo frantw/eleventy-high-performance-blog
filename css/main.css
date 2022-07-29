@@ -69,11 +69,11 @@ header nav {
 
 .dark-mode {
   --text: var(--shade-light);
-  --background: #34364e;
+  --background: #282a3c;
   --anchor: var(--accent-light);
   --desc: var(--shade);
   --highlight: var(--accent-light);
-  --badge: var(--shade);
+  --badge: #f3e6c0;
   --tag: var(--shade-dark);
   --code: #45c8ce;
   --full-screen: var(--shade-dark);
@@ -96,11 +96,11 @@ header nav {
 @media (prefers-color-scheme: dark) {
   :root {
     --text: var(--shade-light);
-    --background: #34364e;
+    --background: #282a3c;
     --anchor: var(--accent-light);
     --desc: var(--shade);
     --highlight: var(--accent-light);
-    --badge: var(--shade);
+    --badge: #f3e6c0;
     --tag: var(--shade-dark);
     --code: #45c8ce;
     --full-screen: var(--shade-dark);
