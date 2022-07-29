@@ -290,12 +290,6 @@ html {
   }
 }
 */
-@font-face {
-  font-family: "Inter UI";
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
-}
 
 /*
 
@@ -747,8 +741,8 @@ dt {
   }
 }
 html {
-  font-family: Inter UI, sans-serif;
-  --font-family: Inter UI, sans-serif;
+  font-family: Noto Sans TC, sans-serif;
+  --font-family: Noto Sans TC, sans-serif;
 }
 form {
   padding: 1.5em 1.5em 0;
