@@ -88,7 +88,7 @@ const processImage = async (img, outputPath) => {
   // fashion. It may be worth adding a feature to opt-out of lossy optimization.
   const fallbackType = inputType == "png" ? "png" : "jpeg";
   if (img.tagName == "IMG") {
-    img.setAttribute("decoding", "async");
+    img.setAttribute("decoding", isArticleBannerImage ? "sync": "async");
     img.setAttribute("loading", isArticleBannerImage ? "eager": "lazy");
     img.setAttribute(
       "style",
