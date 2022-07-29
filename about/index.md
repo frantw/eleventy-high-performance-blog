@@ -1,6 +1,8 @@
 ---
 layout: layouts/base.njk
 title: Hi, I'm Fran.
+description: 一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。
+image: /img/avatar.jpg
 templateClass: tmpl-post
 eleventyNavigation:
   key: About
