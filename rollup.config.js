@@ -11,16 +11,5 @@ export default [
         plugins: [terser()],
       },
     ],
-  },
-  {
-    input: "src/utils.js",
-    output: [
-      {
-        file: "js/utils.js",
-        format: "iife",
-        sourcemap: true,
-        plugins: [terser()],
-      },
-    ],
   }
 ];

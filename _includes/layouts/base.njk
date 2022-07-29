@@ -19,8 +19,6 @@
     <link rel="preload" href="/favicon.svg" as="image" />
     <link rel="preload" href="/img/icons/light-mode.svg" as="image" />
     <link rel="preload" href="/img/icons/dark-mode.svg" as="image" />
-    <link rel="preload" href="{{ '/js/utils.js' | addHash }}" as="script" />
-    <link rel="prefetch" href="https://giscus.app/client.js" as="script" />
     <meta name="theme-color" content="#f9c412">
     <meta name="robots" content="max-snippet:-1, max-image-preview: large, max-video-preview: -1">
     <title>{{ renderData.title or title or metadata.title | escape }}</title>
@@ -64,7 +62,14 @@
     <!-- css is inserted by optimize-html custom plugin -->
   </head>
   <body>
-    <script src="{{ "/js/utils.js" | addHash }}"></script>
+    <script csp-hash>
+      (() => {
+        let isDark = localStorage.getItem('isDarkTheme');
+        isDark = isDark === null ? window.matchMedia("(prefers-color-scheme: dark)").matches: (isDark === 'true');
+        document.body.setAttribute("class", isDark ? "dark-mode": "light-mode");
+        localStorage.setItem('isDarkTheme', isDark ? true: false);
+      })();
+    </script>
     <header class="{% if page.url and page.url.indexOf("/posts/") > -1 %}article-header{% endif %}">
       <nav>
         <div id="nav">
