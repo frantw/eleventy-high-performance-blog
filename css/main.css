@@ -73,7 +73,7 @@ header nav {
   --anchor: var(--accent-light);
   --desc: var(--shade);
   --highlight: var(--accent-light);
-  --badge: #f3e6c0;
+  --badge: #f8bc0c;
   --tag: var(--shade-dark);
   --code: #45c8ce;
   --full-screen: var(--shade-dark);
@@ -100,7 +100,7 @@ header nav {
     --anchor: var(--accent-light);
     --desc: var(--shade);
     --highlight: var(--accent-light);
-    --badge: #f3e6c0;
+    --badge: #f8b60c;
     --tag: var(--shade-dark);
     --code: #45c8ce;
     --full-screen: var(--shade-dark);
