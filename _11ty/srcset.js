@@ -37,7 +37,7 @@ const extension = {
 };
 
 const quality = {
-  avif: 40,
+  avif: 50,
   default: 60,
 };
 
