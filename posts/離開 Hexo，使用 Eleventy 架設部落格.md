@@ -14,7 +14,7 @@ layout: layouts/post.njk
 從今年年初便知道 [Eleventy](https://www.11ty.dev/) 這樣的一套 Static Site Generator，經過一番評估之後，最近終於趁著空閒的空檔，選擇 [Eleventy](https://www.11ty.dev/) 作為新的技術框架，並以 
 [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) 作為基底，架置了新的部落格，和過去所使用的 [Hexo](https://hexo.io/zh-tw/) 框架說掰掰。
 
-在這裡紀錄一些個人的使用心得，也讓其他想嘗試 [Eleventy](https://www.11ty.dev/) 這套工具的人可作為參考。
+在這裡紀錄一些個人的使用心得，也讓其他想嘗試 [Eleventy](https://www.11ty.dev/) 這套工具的人可以作為參考。
 
 ## 為什麼不用 Hexo？
 
@@ -49,7 +49,7 @@ layout: layouts/post.njk
 
 ## 關於 eleventy-high-performance-blog
 
-[eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) 是一套由 google 工程師所建置的開源部落格模板，以打造高速效能為賣點，這個模板已經建構好一套相對完整的架構，包含：
+[eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) 是一套由 google 工程師所建置的開源部落格模板，以打造高速效能為重點，這個模板已經建構好一套相對完整的架構，包含：
  - **圖片最佳化**（響應式圖片、lazy load、轉換 webp / AVIF 等優化格式）
  - **CSS / JS minify**（使用 [rollup.js](https://rollupjs.org/guide/en/)、[PurgeCSS](https://purgecss.com/) 等工具）
  - **基本 SEO 建設**（HTML 語意化、meta tag、Sitemap 等等）
@@ -155,7 +155,7 @@ jobs:
           folder: _site
 ```
 
-Deploy job 使用了 [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) 代勞，記得按照[文件說明](https://github.com/JamesIves/github-pages-deploy-action#using-an-ssh-deploy-key-)去 Repo Settings 設定 **Deploy key** 和 **Repository secrets**，
+Deploy job 使用了 [JamesIves/github-pages-deploy-action](https://github.com/JamesIves/github-pages-deploy-action) 代勞，記得按照[文件說明](https://github.com/JamesIves/github-pages-deploy-action#using-an-ssh-deploy-key-)去 Repo Settings 設定 **Deploy key** 和 **Repository secrets**。
 
 ### 購買自定義域名，設定 Cloudflare 代管 DNS
 
@@ -183,15 +183,15 @@ Deploy job 使用了 [JamesIves/github-pages-deploy-action](https://github.com/J
 
 可以看到，雖然加了一些雜七雜八客製化功能和樣式（甚至是串上了 Google Analytics），但 Lighthouse 還是有很亮眼的表現。
 
-再進一步比較一下手機版網頁上的各個指標所耗費時間：
+再進一步比較修改前和修改後，手機版網頁上的各個指標所耗費時間：
 
-![新手機版網頁的 Performance](https://i.imgur.com/szsJ4v3.png) 
-> Before：**FCP** 時間高達 3.1 秒，**LCP** 時間更需要 9.4 秒，完全就是不合格！
+![舊手機版網頁的 Performance](https://i.imgur.com/szsJ4v3.png) 
+> Before：**FCP** 時間高達 3.1 秒，**LCP** 時間更需要 9.4 秒，完全就是不合格。
 
-![舊手機版網頁的 Performance](https://i.imgur.com/bcn8AYg.png)
+![新手機版網頁的 Performance](https://i.imgur.com/bcn8AYg.png)
 > After：**FCP** 時間降至 1.0 秒，**LCP** 時間只需要 1.3 秒，指標一切綠燈！
 
-對於這樣的復仇成果，我個人可以說是相當滿意！
+對於這樣的復仇成果，我個人可以說是相當滿意。
 
 ## 總結
 
