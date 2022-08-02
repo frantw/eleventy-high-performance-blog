@@ -11,8 +11,7 @@ layout: layouts/post.njk
 
 ## 前言
 
-從今年年初便知道 [Eleventy](https://www.11ty.dev/) 這樣的一套 Static Site Generator，經過一番評估之後，最近終於趁著空閒的空檔，選擇 [Eleventy](https://www.11ty.dev/) 作為新的技術框架，並以 
-[eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) 作為基底，架置了新的部落格，和過去所使用的 [Hexo](https://hexo.io/zh-tw/) 框架說掰掰。
+從今年年初便知道 [Eleventy](https://www.11ty.dev/) 這樣的一套 Static Site Generator，經過一番評估之後，最近終於趁著空閒的空檔，選擇 [Eleventy](https://www.11ty.dev/) 作為新的技術框架，並以 [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) 作為基底，架置了新的部落格，和過去所使用的 [Hexo](https://hexo.io/zh-tw/) 框架說掰掰。
 
 在這裡紀錄一些個人的使用心得，也讓其他想嘗試 [Eleventy](https://www.11ty.dev/) 這套工具的人可以作為參考。
 
