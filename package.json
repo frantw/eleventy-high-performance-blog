@@ -13,7 +13,9 @@
     "debug": "DEBUG=* eleventy && npm run test",
     "test": "mocha test/test*.js",
     "test-watch": "mocha test/test*.js --watch --watch-files=test/*",
-    "clean": "rm -Rf ./_site/posts/*"
+    "clean": "rm -Rf ./_site/posts/*",
+    "post": "sh shells/post.sh",
+    "edit": "sh shells/edit.sh"
   },
   "pre-push": [
     "build"
