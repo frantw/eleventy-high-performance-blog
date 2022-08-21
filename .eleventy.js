@@ -146,17 +146,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     const dt = DateTime.fromJSDate(dateObj, { zone: "utc" });
-    const dstr = dt.toFormat("LLL dd, yyyy");
-    const nth = (d) => {
-      if (d > 3 && d < 21) return "th";
-      switch (d % 10) {
-        case 1:  return "st";
-        case 2:  return "nd";
-        case 3:  return "rd";
-        default: return "th";
-      }
-    }
-    return dstr.split(",")[0] + nth(dt.day) + "," + dstr.split(",")[1];
+    const m = dt.toFormat("LLL");
+    const y = dt.year;
+
+    let d = dt.day;
+    if (d > 3 && d < 21) d += "th";
+    else if (d % 10 == 1) d += "st";
+    else if (d % 10 == 2) d += "nd";
+    else if (d % 10 == 3) d += "rd";
+    else d += "th";
+
+    return `${m} ${d}, ${y}`;
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
