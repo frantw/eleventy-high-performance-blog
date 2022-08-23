@@ -17,9 +17,7 @@
     "post": "sh shells/post.sh",
     "edit": "sh shells/edit.sh"
   },
-  "pre-push": [
-    "build"
-  ],
+  "pre-push": [],
   "pre-commit": [],
   "repository": {
     "type": "git",
