@@ -5,6 +5,9 @@ date: 2022-08-02
 tags:
  - Eleventy
  - 11ty
+ - Hexo
+ - CI/CD
+ - Cloudflare
 image: https://i.imgur.com/wnR3ScU.png
 layout: layouts/post.njk
 ---
@@ -12,8 +15,6 @@ layout: layouts/post.njk
 ## 前言
 
 從今年年初便知道 [Eleventy](https://www.11ty.dev/) 這樣的一套 Static Site Generator，經過一番評估之後，最近終於趁著空閒的空檔，選擇 [Eleventy](https://www.11ty.dev/) 作為新的技術框架，並以 [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) 作為基底，架置了新的部落格，和過去所使用的 [Hexo](https://hexo.io/zh-tw/) 框架說掰掰。
-
-在這裡紀錄一些個人的使用心得，也讓其他想嘗試 [Eleventy](https://www.11ty.dev/) 這套工具的人可以作為參考。
 
 ## 為什麼不用 Hexo？
 
@@ -114,7 +115,9 @@ Color Palette 的部分，我則是借助了 [Colormind](http://colormind.io/boo
 
 在本地環境弄得差不多了，下一步開始著手調整 CI/CD workflow。
 
-Deploy 部分我就直接使用 GitHub Actions 一口氣處理掉了，覺得自己不太需要用到 [Netlify](https://www.netlify.com/) 服務，需要作轉址或是 SSL 憑證則是透過熟悉的 [Cloudflare](https://www.cloudflare.com/zh-tw/) 幫忙處理。
+CI 部分，原有的架構會有在 run build 過程中耗時過久的問題，我選擇直接對最費時的圖片處理流程下手，調整 `.gitignore` 設定，將 `_site/img` 事先 commit 進 repo（畢竟我的個人需求也不是很需要時常更新既有的靜態圖檔），如此一來可節省 5 到 10 分鐘不等。
+
+CD 部分，我就直接使用 GitHub Actions 一口氣處理掉了，覺得自己不太需要用到 [Netlify](https://www.netlify.com/) 服務，需要作轉址或是 SSL 憑證則是透過熟悉的 [Cloudflare](https://www.cloudflare.com/zh-tw/) 幫忙處理。
 
 #### CI/CD flow 說明
 
