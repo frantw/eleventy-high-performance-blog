@@ -299,7 +299,7 @@ Preferences → Settings → Features → Terminal
 
 雖然上面洋洋灑灑列了一大篇，但其實還有其他的眉眉角角，比如說
 
-- 設定 SSH 金鑰，可以參考我之前寫的另一篇[文章](https://blog.wjhuang.com/posts/83ff426e/#%E5%9C%A8-OSX-%E8%88%87-Linux-%E7%92%B0%E5%A2%83%E4%B8%8B%E7%94%A2%E7%94%9F-SSH-key)
+- 設定 SSH 金鑰，可以參考我之前寫的另一篇[文章](https://frannn.dev/posts/3b1c3cbc/#%E5%9C%A8-osx-%E8%88%87-linux-%E7%92%B0%E5%A2%83%E4%B8%8B%E7%94%A2%E7%94%9F-ssh-key)
 - 安裝 VSCode 的擴充套件
 - 安裝 Chrome 的擴充功能
 - ……
