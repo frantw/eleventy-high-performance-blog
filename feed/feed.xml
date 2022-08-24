@@ -99,7 +99,7 @@
 &lt;h3 id=&quot;ci%2Fcd&quot;&gt;CI/CD &lt;a class=&quot;direct-link&quot; href=&quot;#ci%2Fcd&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;在本地環境弄得差不多了，下一步開始著手調整 CI/CD workflow。&lt;/p&gt;
 &lt;p&gt;CI 部分，原有的架構會有在 run build 過程中耗時過久的問題，我選擇直接對最費時的圖片處理流程下手，調整 &lt;code&gt;.gitignore&lt;/code&gt; 設定，將 &lt;code&gt;_site/img&lt;/code&gt; 事先 commit 進 repo（畢竟我的個人需求也不是很需要時常更新既有的靜態圖檔），如此一來可節省 5 到 10 分鐘不等。&lt;/p&gt;
-&lt;p&gt;CD 部分，我就是直接使用 GitHub Actions 一口氣處理掉了，覺得自己不太需要用到 &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt; 服務，需要作轉址或是 SSL 憑證則是透過熟悉的 &lt;a href=&quot;https://www.cloudflare.com/zh-tw/&quot;&gt;Cloudflare&lt;/a&gt; 幫忙處理。&lt;/p&gt;
+&lt;p&gt;CD 部分，我就直接使用 GitHub Actions 一口氣處理掉了，覺得自己不太需要用到 &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt; 服務，需要作轉址或是 SSL 憑證則是透過熟悉的 &lt;a href=&quot;https://www.cloudflare.com/zh-tw/&quot;&gt;Cloudflare&lt;/a&gt; 幫忙處理。&lt;/p&gt;
 &lt;h4 id=&quot;ci%2Fcd-flow-%E8%AA%AA%E6%98%8E&quot;&gt;CI/CD flow 說明 &lt;a class=&quot;direct-link&quot; href=&quot;#ci%2Fcd-flow-%E8%AA%AA%E6%98%8E&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;p&gt;基本上常駐的就是三支 branch：&lt;/p&gt;
 &lt;ul&gt;
