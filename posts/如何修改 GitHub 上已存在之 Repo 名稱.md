@@ -19,7 +19,7 @@ layout: layouts/post.njk
 
 以 GitHub 為例，先進入遠端 Repo 的設定頁面：
 
-```text
+```plain
 https://github.com/<github 帳號>/<repo 名稱>/settings
 ```
 
@@ -33,7 +33,7 @@ https://github.com/<github 帳號>/<repo 名稱>/settings
 
 GitHub 更新 Repo 名稱後，複製新的遠端伺服器網址，格式如下：
 
-```text
+```plain
 git@github.com:<github 帳號>/<repo 名稱>.git
 ```
 
