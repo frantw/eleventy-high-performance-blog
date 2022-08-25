@@ -149,7 +149,7 @@ brew install iterm2
 
 滑鼠右鍵、另存連結，存下 `.itermcolors` 檔案，再回到 iTerm2 中依序點擊
 
-```text
+```plain
 Preferences → Profiles → Colors → Color Presets... → Import...
 ```
 
@@ -213,7 +213,7 @@ p10k configure
 
 要回到 iTerm2 中確認字型是 `MesloLGS NF` 並設定字體大小，依序點選
 
-```text
+```plain
 Preferences → Profiles → Text
 ```
 
@@ -238,7 +238,7 @@ code file_or_folder_name
 ```
 
 設定預設終端機和字體，在 VSCode 依序點擊
-```text
+```plain
 Preferences → Settings → Features → Terminal 
 ```
 
