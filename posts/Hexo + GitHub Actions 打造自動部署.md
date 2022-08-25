@@ -60,7 +60,7 @@ npm install
 
 跑完後，會在該資料夾底下新增所需要的檔案：
 
-```text
+```plain
 .
 ├── _config.yml
 ├── package.json
