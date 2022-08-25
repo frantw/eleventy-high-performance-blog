@@ -67,7 +67,7 @@ SSL 的原文是 **Secure Sockets Layer**，聽起來好像很複雜，其實本
 ![](https://i.imgur.com/AkGyFNQ.png)
 
 由於我是使用 Github Pages，所以指向的 IP 是以下四組。
-```text
+```plain
 185.199.108.153
 185.199.109.153
 185.199.110.153
