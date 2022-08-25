@@ -64,7 +64,7 @@ npm install gulp gulp-sass gulp-pug gulp-uglify gulp-imagemin gulp-connect gulp-
 
 以下是我的資料夾結構配置：
 
-```text
+```plain
 |- src/    #開發時的專案檔案資料夾
     |- images/
     |- index.js
