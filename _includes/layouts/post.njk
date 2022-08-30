@@ -50,10 +50,10 @@ templateClass: tmpl-post
 
 <section class="article-comment">
   <script src="https://giscus.app/client.js"
-          data-repo="frantw/eleventy-high-performance-blog"
-          data-repo-id="R_kgDOHQSdIQ"
-          data-category="Comments"
-          data-category-id="DIC_kwDOHQSdIc4CQfRB"
+          data-repo="{{ metadata.giscus.repo }}"
+          data-repo-id="{{ metadata.giscus.repoId }}"
+          data-category="{{ metadata.giscus.category }}"
+          data-category-id="{{ metadata.giscus.categoryId }}"
           data-mapping="title"
           data-strict="0"
           data-reactions-enabled="1"

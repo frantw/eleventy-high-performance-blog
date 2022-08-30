@@ -6,6 +6,12 @@
   "genre": "Insert a schema.org genre",
   "googleAnalyticsId": "UA-102201439-3",
   "googleAnalytics4Id": "G-WPT921EDGX",
+  "giscus": {
+    "repo": "frantw/eleventy-high-performance-blog",
+    "repoId": "R_kgDOHQSdIQ",
+    "category": "Comments",
+    "categoryId": "DIC_kwDOHQSdIc4CQfRB"
+  },
   "sendWebVitals": false,
   "feed": {
     "subtitle": "一隻野生的前端工程師。相信每一行程式碼都是改變世界的力量。",
