@@ -148,7 +148,6 @@
 &lt;p&gt;這次基於簡潔的 &lt;a href=&quot;https://github.com/google/eleventy-high-performance-blog&quot;&gt;eleventy-high-performance-blog&lt;/a&gt; 模板工具來開發，客製化個人功能的過程中，每告一段落、完成了一個較大規模的異動調整，我就會停下來檢查一下剛才完成的部分有沒有什麼地方可以再優化。（我個人是花了點心力在確認資源載入的 &lt;code&gt;preload&lt;/code&gt; 設定等等）&lt;/p&gt;
 &lt;p&gt;與日常的專案開發不同，受限於頻繁的功能迭代有時候很難落實這件事情──然而&lt;strong&gt;頻繁量測，不斷地調整與測試，是提升網頁效能的必經之路&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;不排斥自己動手來的話，我是很推薦 &lt;a href=&quot;https://github.com/google/eleventy-high-performance-blog&quot;&gt;eleventy-high-performance-blog&lt;/a&gt; 這個模板工具的，還收穫了滿滿的成就感！&lt;/p&gt;
-&lt;p&gt;這個部落格的原始碼放在 &lt;a href=&quot;https://github.com/frantw/eleventy-high-performance-blog&quot;&gt;GitHub&lt;/a&gt; 上，如有疑問歡迎在這篇文章底下留言。&lt;/p&gt;
 &lt;h3 id=&quot;%E5%85%B6%E4%BB%96%E5%8F%83%E8%80%83&quot;&gt;其他參考 &lt;a class=&quot;direct-link&quot; href=&quot;#%E5%85%B6%E4%BB%96%E5%8F%83%E8%80%83&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://blog.huli.tw/2021/08/22/eleventy-over-hexo/&quot;&gt;除了 hexo，也可以考慮用 eleventy 來寫技術部落格&lt;/a&gt;&lt;/li&gt;
