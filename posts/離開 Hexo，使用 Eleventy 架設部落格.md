@@ -207,8 +207,6 @@ Deploy job 使用了 [JamesIves/github-pages-deploy-action](https://github.com/J
 
 不排斥自己動手來的話，我是很推薦 [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) 這個模板工具的，還收穫了滿滿的成就感！
 
-這個部落格的原始碼放在 [GitHub](https://github.com/frantw/eleventy-high-performance-blog) 上，如有疑問歡迎在這篇文章底下留言。
-
 ### 其他參考
  - [除了 hexo，也可以考慮用 eleventy 來寫技術部落格](https://blog.huli.tw/2021/08/22/eleventy-over-hexo/)
  - [為什麼我離開 Medium 用 eleventy 做一個 blog](https://jason-memo.dev/posts/why-i-leave-medium-and-build-blog-with-eleventy/)
