@@ -20,6 +20,11 @@
 /about/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
+/404.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+
 /archives/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 /archives/
@@ -55,11 +60,6 @@
 /tags/gulp/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
-/404.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-
 /tags/javascript/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 /tags/javascript/
@@ -85,14 +85,14 @@
 /tags/hexo/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
-/tags/github/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-/tags/github/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-
 /tags/ajax/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 /tags/ajax/
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+
+/tags/github/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+/tags/github/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
 /tags/json/index.html
@@ -128,11 +128,6 @@
 /tags/iterm2/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 /tags/iterm2/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-
-/tags/zimfw/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-/tags/zimfw/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
 /tags/vscode/index.html
@@ -225,11 +220,6 @@
 /posts/2bb3134/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
-/posts/7694b685/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-/posts/7694b685/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-
 /posts/350dd70b/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 /posts/350dd70b/
@@ -238,6 +228,11 @@
 /posts/6468559b/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 /posts/6468559b/
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+
+/posts/7694b685/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+/posts/7694b685/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
 /posts/56efe959/index.html
@@ -270,14 +265,14 @@
 /posts/f1f89997/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
-/posts/27fd8f25/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-/posts/27fd8f25/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
-
 /posts/dc7de635/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 /posts/dc7de635/
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+
+/posts/27fd8f25/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
+/posts/27fd8f25/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/;style-src 'unsafe-inline';img-src 'self' data:
 
 /posts/2b10bcfa/index.html
