@@ -28,7 +28,7 @@
 &lt;ul&gt;
 &lt;li&gt;當 VSCode 開啟時，連上 Neovim instance&lt;/li&gt;
 &lt;li&gt;在 normal/visual 模式時，指令直接送往 Neovim，而這個插件會監聽 Neovim 的變化，在 VSCode 中同步編輯&lt;/li&gt;
-&lt;li&gt;切換到 insert 模式的時候，則會停止監聽，將編輯掌控權交由 VSCode 本身，直到模式再度切斷&lt;/li&gt;
+&lt;li&gt;切換到 insert 模式的時候，則會停止監聽，將編輯掌控權交由 VSCode 本身，直到模式再度切換&lt;/li&gt;
 &lt;li&gt;部分指令像是檔案儲存、視窗滾動，等等的操作都是直接透過 VSCode command 來完成，而非 Vim 的原生指令&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;這部分在&lt;a href=&quot;https://github.com/vscode-neovim/vscode-neovim&quot;&gt;官方文件&lt;/a&gt;中有更加詳盡的介紹&lt;/p&gt;
@@ -82,7 +82,8 @@
 &lt;p&gt;可以直接參考我的 Repo：&lt;a href=&quot;https://github.com/frantw/nvimrc&quot;&gt;nvimrc&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;%E5%85%B6%E4%BB%96%E8%BC%94%E4%BB%A5%E9%81%8B%E7%94%A8%E7%9A%84-vscode-%E6%8F%92%E4%BB%B6&quot;&gt;其他輔以運用的 VSCode 插件 &lt;a class=&quot;direct-link&quot; href=&quot;#%E5%85%B6%E4%BB%96%E8%BC%94%E4%BB%A5%E9%81%8B%E7%94%A8%E7%9A%84-vscode-%E6%8F%92%E4%BB%B6&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;在這裡推薦一些我個人有安裝的 VSCode 插件，對於提升開發效率也有一定程度的幫助&lt;/p&gt;
-&lt;p&gt;各種程式語言的 Refactor 插件或是 Snippets 插件就不特別列出&lt;/p&gt;
+&lt;p&gt;各種程式語言的 Refactor 插件或是 Snippets 插件就不特別列出&lt;br&gt;
+（這是最基本的，但也需要親自閱讀文件，記憶可用功能和對應 shortcut）&lt;/p&gt;
 &lt;h3 id=&quot;which-key&quot;&gt;Which Key &lt;a class=&quot;direct-link&quot; href=&quot;#which-key&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=VSpaceCode.whichkey&quot;&gt;Which Key&lt;/a&gt; 提供了另一種形式的功能菜單，可以大幅度降低我們死背硬記 shortcut 的困擾&lt;/p&gt;
 &lt;p&gt;原則上進行個人設定的調整時，最好盡可能根據&lt;a href=&quot;https://en.wikipedia.org/wiki/Pareto_principle&quot;&gt;關鍵少數法則&lt;/a&gt;來調整：&lt;strong&gt;透過最常用的 20% 功能指令，去覆蓋 80% 的需求應用&lt;/strong&gt;&lt;/p&gt;
@@ -131,7 +132,7 @@
 &lt;p&gt;後來我重新思考，釐清自己的應用場景其實只有在呼叫 Quick Fix 選單時會碰上這個問題&lt;br&gt;
 那麼或許我不需要大費周章保留一個快捷鍵去做同步選取的動作，直接針對呼叫 Quick Fix 的快捷鍵動手就好&lt;/p&gt;
 &lt;p&gt;首先調整 VSCode 的 &lt;code&gt;keybindings.json&lt;/code&gt;，指定快捷鍵傳入 Neovim：&lt;/p&gt;
-&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;key&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;cmd+.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vscode-neovim.send&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;when&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;editorFocus &amp;amp;&amp;amp; neovim.mode == &#39;visual&#39;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;args&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;D-.&gt;&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;key&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;cmd+.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;command&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;vscode-neovim.send&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;when&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;editorFocus &amp;amp;&amp;amp; neovim.mode == &#39;visual&#39;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;args&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;D-.&gt;&quot;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;再回到 &lt;code&gt;init.vim&lt;/code&gt;，在呼叫快捷鍵時主動同步選單，並幫忙呼叫 VSCode command：&lt;/p&gt;
 &lt;pre class=&quot;language-vim&quot;&gt;&lt;code class=&quot;language-vim&quot;&gt;vnoremap &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;D&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;cmd&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;VSCodeNotifyVisual&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;noop&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Esc&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;cmd&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;VSCodeNotify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;editor.action.quickFix&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;cr&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;如此一來，可以完美應付我的需求，在操作體驗上也更加直覺！&lt;/p&gt;
@@ -459,9 +460,11 @@
 &lt;p&gt;雖然上面洋洋灑灑列了一大篇，但其實還有其他的眉眉角角，比如說&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;安裝瀏覽器的擴充功能&lt;/li&gt;
-&lt;li&gt;安裝 VSCode 的擴充套件，設定個人的客製化快捷鍵&lt;/li&gt;
+&lt;li&gt;安裝 VSCode 的擴充套件，設定個人的客製化快捷鍵&lt;br&gt;
+可以參考我寫的別篇文章：&lt;a href=&quot;https://frannn.dev/posts/5baab346/#%E5%85%B6%E4%BB%96%E8%BC%94%E4%BB%A5%E9%81%8B%E7%94%A8%E7%9A%84-vscode-%E6%8F%92%E4%BB%B6&quot;&gt;其他輔以運用的 VSCode 插件&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;善用效率啟動器（Launcher），上面提及的 &lt;a href=&quot;https://www.raycast.com/&quot;&gt;Raycast&lt;/a&gt; 便是其中之一&lt;/li&gt;
-&lt;li&gt;設定 SSH 金鑰，也可以參考我之前寫的另一篇文章：&lt;a href=&quot;https://frannn.dev/posts/3b1c3cbc/#%E5%9C%A8-osx-%E8%88%87-linux-%E7%92%B0%E5%A2%83%E4%B8%8B%E7%94%A2%E7%94%9F-ssh-key&quot;&gt;在 OSX 與 Linux 環境下產生 SSH key&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;如何設定 SSH 金鑰&lt;br&gt;
+可以參考我寫的別篇文章：&lt;a href=&quot;https://frannn.dev/posts/3b1c3cbc/#%E5%9C%A8-osx-%E8%88%87-linux-%E7%92%B0%E5%A2%83%E4%B8%8B%E7%94%A2%E7%94%9F-ssh-key&quot;&gt;在 OSX 與 Linux 環境下產生 SSH key&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;……&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;還有許多小工具能幫助開發體驗更加美好，這些就留待未來有機會再補充囉！&lt;/p&gt;
