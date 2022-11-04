@@ -38,11 +38,11 @@ const CSP = {
     // Script from same-origin and inline-hashes.
     // If you need to add an external host for scripts you need to add an item like 'https://code.jquery.com/jquery-3.6.0.slim.min.js' to this list.
     ["script-src", SELF, "https://giscus.app/client.js", /* Replaced by apply-csp.js plugin */ "HASHES"],
-    ["frame-src", SELF, "https://giscus.app/"],
+    ["frame-src", SELF, "https://giscus.app/", "https://www.youtube.com/", "https://www.youtube-nocookie.com/"],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
-    ["img-src", SELF, "data:"],
+    ["img-src", SELF, "https://i.ytimg.com/", "data:"],
 
     // To add new rules, add new array literals here or extend those above with
     // additional allowed elements.

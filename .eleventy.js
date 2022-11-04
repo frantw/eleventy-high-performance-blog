@@ -59,6 +59,7 @@ const localImages = require("./third_party/eleventy-plugin-local-images/.elevent
 const CleanCSS = require("clean-css");
 const GA_ID = require("./_data/metadata.json").googleAnalyticsId;
 const { cspDevMiddleware } = require("./_11ty/apply-csp.js");
+const embedYouTube = require("eleventy-plugin-youtube-embed");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -71,6 +72,10 @@ module.exports = function (eleventyConfig) {
     selector:
       "img,amp-img,amp-video,meta[property='og:image'],meta[name='twitter:image'],amp-story",
     verbose: false,
+  });
+
+  eleventyConfig.addPlugin(embedYouTube, {
+    lazy: true
   });
 
   eleventyConfig.addPlugin(require("./_11ty/read-more.js"));
