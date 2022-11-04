@@ -1057,6 +1057,9 @@ blockquote footer {
   font-size: 90%;
   text-align: start;
 }
+blockquote p {
+  word-wrap: break-word;
+}
 img,
 video {
   height: auto;
