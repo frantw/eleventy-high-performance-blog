@@ -20,6 +20,11 @@
 /about/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
+/404.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+
 /archives/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /archives/
@@ -85,6 +90,11 @@
 /tags/github/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
+/tags/vue-js/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+/tags/vue-js/
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+
 /tags/ajax/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /tags/ajax/
@@ -93,11 +103,6 @@
 /tags/json/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /tags/json/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-
-/tags/vue-js/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-/tags/vue-js/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
 /tags/macos/index.html
@@ -115,14 +120,14 @@
 /tags/nvm/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
-/tags/iterm2/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-/tags/iterm2/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-
 /tags/zsh/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /tags/zsh/
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+
+/tags/iterm2/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+/tags/iterm2/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
 /tags/vscode/index.html
@@ -210,11 +215,6 @@
 /tags/11ty/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
-/404.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-
 /posts/f6df526e/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /posts/f6df526e/
@@ -235,14 +235,14 @@
 /posts/350dd70b/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
-/posts/6468559b/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-/posts/6468559b/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-
 /posts/7694b685/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /posts/7694b685/
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+
+/posts/6468559b/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+/posts/6468559b/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
 /posts/56efe959/index.html
@@ -285,11 +285,6 @@
 /posts/2b10bcfa/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
-/posts/27fd8f25/index.html
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-/posts/27fd8f25/
-  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
-
 /posts/5baab346/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /posts/5baab346/
@@ -298,6 +293,11 @@
 /posts/cb4a7f47/index.html
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 /posts/cb4a7f47/
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+
+/posts/27fd8f25/index.html
+  Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
+/posts/27fd8f25/
   Content-Security-Policy: default-src 'self';object-src 'none';script-src 'self' https://giscus.app/client.js 'sha256-Ky9qZOPnMhQV/s7Fdb9TYAOfU4KtWNqCZaFK8tSzXa0=' 'sha256-zpxrDd8T0qz3kBmsPk4N2Yljt/cI4nQpWytE1zmmtrk=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=';frame-src 'self' https://giscus.app/ https://www.youtube.com/ https://www.youtube-nocookie.com/;style-src 'unsafe-inline';img-src 'self' https://i.ytimg.com/ data:
 
 /posts/82901432/index.html
