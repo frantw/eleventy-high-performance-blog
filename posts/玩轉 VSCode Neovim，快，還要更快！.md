@@ -208,7 +208,7 @@ call plug#end()
 set clipboard=unnamedplus
 augroup SyncVSCodeClipboard
     autocmd!
-    autocmd TextYankPost * if v:event.operator ==# 'y' | call VSCodeNotify('clipboard.copy', @0) | endif
+    autocmd TextYankPost * if v:event.operator ==# 'y' | call VSCodeNotify('clipboard.copy', @) | endif
 augroup END
 ```
 
