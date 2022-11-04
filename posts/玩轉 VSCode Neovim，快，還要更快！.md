@@ -100,21 +100,33 @@ endif
 }
 ```
 
-### 修改 macOS 中針對 VSCode 的鍵盤鍵入設定
+### 安裝 vim-plug
 
-需要在終端機中輸入：
+要更進一步提升效率，絕對少不了 vim 插件的應用，我選擇使用 [vim-plug](https://github.com/junegunn/vim-plug) 這個 plug manager
 
 ```bash
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-否則在 VSCode 進行 hjkl 移動時，將按鍵按住不放時，只會移動一格，並不會一路向前
+要安裝 plugin（以 easymotion 為例），只需要在 `init.vim` 開頭加入：
 
-### 編輯 VSCode keybindings.json
+```vim
+call plug#begin()
+" use VSCode easymotion when in VSCode mode
+Plug 'asvetliakov/vim-easymotion'
+call plug#end()
+```
+
+再下 `:PlugInstall` 命令來安裝即可
+當然別忘了這個操作必須以 `nvim` 指令來開啟編輯 `init.vim`
+
+### 編輯 VSCode keybindings.json (optional)
 
 到這一步其實已經完成得差不多了，但或許實際投入開發，會需要因應個人習慣做一些 VSCode 中的快捷鍵調整
 
-針對 insert 模式，可以透過類似以下的形式來設定：
+比方說，你希望在 insert mode 輸入 jj 切換到 normal mode
+則可以透過以下形式設定：
 
 ```json
 [
@@ -127,9 +139,7 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ]
 ```
 
-而某些特殊鍵（control/alt/command）等等的組合鍵，會需要特別在 VSCode 指出，傳給 Neovim
-
-這部分也可以按照個人需要加以調整；
+而某些特殊鍵（control/alt/command）等等的組合鍵，如果有需要傳給 Neovim，會需要特別在 VSCode 中指出：
 
 ```json
 [
@@ -142,32 +152,14 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ]
 ```
 
-### 安裝 vim-plug
-
-要更進一步提升效率，絕對少不了 vim 插件的應用，我選擇使用 [vim-plug](https://github.com/junegunn/vim-plug) 這個 plug manager
-
-```bash
-curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-要安裝 plugin，只需要在先前的 `~/.config/nvim/init.vim` 開頭加入：
-
-```vim
-call plug#begin()
-" use VSCode easymotion when in VSCode mode
-Plug 'asvetliakov/vim-easymotion'
-call plug#end()
-```
-
-再下 `:PlugInstall` 命令來安裝即可
-當然別忘了必須以 `nvim` 指令來開啟編輯 `init.vim`
-
 ## 我的個人 init.vim 設定檔
 
-關於更詳盡的 `init.vim` 設定檔細節以及安裝的 plugin
-
+關於更詳盡的，我具體設置的 `init.vim` 設定檔
 可以直接參考我的 Repo：[nvimrc](https://github.com/frantw/nvimrc)
+
+以這個設定檔為基礎，下方影片是以 [Tennis Kata](https://codingdojo.org/kata/Tennis/) 練習 [TDD](https://zh.wikipedia.org/zh-tw/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91) 的演示
+
+https://www.youtube.com/watch?v=P0QIlTovyuk
 
 ## 其他輔以運用的 VSCode 插件
 
@@ -183,6 +175,12 @@ call plug#end()
 原則上進行個人設定的調整時，最好盡可能根據[關鍵少數法則](https://en.wikipedia.org/wiki/Pareto_principle)來調整：**透過最常用的 20% 功能指令，去覆蓋 80% 的需求應用**
 
 但不可避免的，總是有碰上剩下的 20% 需求應用的時候，透過 Which Key 搭配 `keybindings.json` 的客製化設定，就能盡可能覆蓋這部分的需要
+
+### Search everywhere
+
+[Search everywhere](https://marketplace.visualstudio.com/items?itemName=kbysiec.vscode-search-everywhere) 補足 VSCode 內鍵的搜尋功能，更像是 JetBrains 系列 IDE 的 Search Everywhere 那樣
+
+能做到 Find all references，並監聽 VSCode 工作區中的相關異動變化，幫助我們迅速在不同的檔案之中來去自如
 
 ### Double Line Numbers
 
@@ -215,6 +213,18 @@ augroup END
 這樣一來，每當觸發 `yank` 便會自動同步到這個插件的紀錄之中，可以用來循環貼上
 
 ## 踩坑
+
+### 在 VSCode 進行 hjkl 移動時，將按鍵按住不放時，只會移動一格
+
+關於這個問題的情境敘述，可以直接參考 PTT Editor 板上的[原文](https://www.ptt.cc/bbs/Editor/M.1626231647.A.08B.html)
+
+我們希望按鍵在按住不放時，可以連續觸發，會需要修改 macOS 中針對 VSCode 的鍵盤鍵入設定
+
+在終端機中輸入：
+
+```bash
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
 
 ### 在 visual mode 的選取範圍，並不真正在 VSCode 中被選取
 
