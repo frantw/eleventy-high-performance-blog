@@ -25,7 +25,7 @@ layout: layouts/post.njk
 背後的工作原理可以簡化為：
 - 當 VSCode 開啟時，連上 Neovim instance
 - 在 normal/visual 模式時，指令直接送往 Neovim，而這個插件會監聽 Neovim 的變化，在 VSCode 中同步編輯
-- 切換到 insert 模式的時候，則會停止監聽，將編輯掌控權交由 VSCode 本身，直到模式再度切斷
+- 切換到 insert 模式的時候，則會停止監聽，將編輯掌控權交由 VSCode 本身，直到模式再度切換
 - 部分指令像是檔案儲存、視窗滾動，等等的操作都是直接透過 VSCode command 來完成，而非 Vim 的原生指令
 
 這部分在[官方文件](https://github.com/vscode-neovim/vscode-neovim)中有更加詳盡的介紹
@@ -174,6 +174,7 @@ call plug#end()
 在這裡推薦一些我個人有安裝的 VSCode 插件，對於提升開發效率也有一定程度的幫助
 
 各種程式語言的 Refactor 插件或是 Snippets 插件就不特別列出
+（這是最基本的，但也需要親自閱讀文件，記憶可用功能和對應 shortcut）
 
 ### Which Key
 
@@ -253,12 +254,12 @@ augroup END
    首先調整 VSCode 的 `keybindings.json`，指定快捷鍵傳入 Neovim：
     ```json
     [
-    {
+      {
         "key": "cmd+.",
         "command": "vscode-neovim.send",
         "when": "editorFocus && neovim.mode == 'visual'",
         "args": "<D-.>"
-    }
+      }
     ]
     ```
 
