@@ -322,8 +322,10 @@ brew install --cask raycast
 雖然上面洋洋灑灑列了一大篇，但其實還有其他的眉眉角角，比如說
 - 安裝瀏覽器的擴充功能
 - 安裝 VSCode 的擴充套件，設定個人的客製化快捷鍵
+  可以參考我寫的別篇文章：[其他輔以運用的 VSCode 插件](https://frannn.dev/posts/5baab346/#%E5%85%B6%E4%BB%96%E8%BC%94%E4%BB%A5%E9%81%8B%E7%94%A8%E7%9A%84-vscode-%E6%8F%92%E4%BB%B6)
 - 善用效率啟動器（Launcher），上面提及的 [Raycast](https://www.raycast.com/) 便是其中之一
-- 設定 SSH 金鑰，也可以參考我之前寫的另一篇文章：[在 OSX 與 Linux 環境下產生 SSH key](https://frannn.dev/posts/3b1c3cbc/#%E5%9C%A8-osx-%E8%88%87-linux-%E7%92%B0%E5%A2%83%E4%B8%8B%E7%94%A2%E7%94%9F-ssh-key)
+- 如何設定 SSH 金鑰
+  可以參考我寫的別篇文章：[在 OSX 與 Linux 環境下產生 SSH key](https://frannn.dev/posts/3b1c3cbc/#%E5%9C%A8-osx-%E8%88%87-linux-%E7%92%B0%E5%A2%83%E4%B8%8B%E7%94%A2%E7%94%9F-ssh-key)
 - ……
 
 還有許多小工具能幫助開發體驗更加美好，這些就留待未來有機會再補充囉！
